@@ -1,0 +1,60 @@
+
+
+public class Input_Python
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Input_Python"
+        property "de.generated" "true"
+{
+    public double flex_base
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "flex_base"
+                property update "true";
+    public double newAttribute
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "flex_simul"
+                property update "true";
+    public java.lang.Long newAttribute1
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Anos_de_Estudo"
+                property update "true";
+    public java.lang.Long num_simulacoes
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Num_simulacoes"
+                property update "true";
+    public Input_Python(double flex_base, double newAttribute, java.lang.Long newAttribute1, java.lang.Long num_simulacoes)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Input_Python()
+                property "dataio.default" "true";
+}
+
+public class Saida_Python
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Saida_Python"
+        property "de.generated" "true"
+{
+    public java.lang.Long newAttribute
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Ano"
+                property update "true";
+    public double premio_a_Cobrar
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Premio_a_Cobrar"
+                property update "true";
+    public double var
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Var95_Flex_base"
+                property update "true";
+    public double var95_Flex_Simulado
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Var95_Flex_Simulado"
+                property update "true";
+    public Saida_Python(java.lang.Long newAttribute, double premio_a_Cobrar, double var, double var95_Flex_Simulado)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Saida_Python()
+                property "dataio.default" "true";
+}
+

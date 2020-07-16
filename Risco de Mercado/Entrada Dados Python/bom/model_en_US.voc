@@ -1,0 +1,24 @@
+
+# Input_Python
+Input_Python#concept.label = Input_Python
+Input_Python.Input_Python(double,double,java.lang.Long,java.lang.Long)#phrase.navigation = a new {Input_Python} where {0, flex_base} {1, flex_simul} {2, Anos_de_Estudo} {3, Num_simulacoes}
+Input_Python.flex_base#phrase.action = set the flex_base of {this} to {flex_base}
+Input_Python.flex_base#phrase.navigation = {flex_base} of {this}
+Input_Python.newAttribute#phrase.action = set the flex_simul of {this} to {flex_simul}
+Input_Python.newAttribute#phrase.navigation = {flex_simul} of {this}
+Input_Python.newAttribute1#phrase.action = set the Anos_de_Estudo of {this} to {Anos_de_Estudo}
+Input_Python.newAttribute1#phrase.navigation = {Anos_de_Estudo} of {this}
+Input_Python.num_simulacoes#phrase.action = set the Num_simulacoes of {this} to {Num_simulacoes}
+Input_Python.num_simulacoes#phrase.navigation = {Num_simulacoes} of {this}
+
+# Saida_Python
+Saida_Python#concept.label = Saida_Python
+Saida_Python.Saida_Python(java.lang.Long,double,double,double)#phrase.navigation = a new {Saida_Python} where {0, Ano} {1, Premio_a_Cobrar} {2, Var95_Flex_base} {3, Var95_Flex_Simulado}
+Saida_Python.newAttribute#phrase.action = set the Ano of {this} to {Ano}
+Saida_Python.newAttribute#phrase.navigation = {Ano} of {this}
+Saida_Python.premio_a_Cobrar#phrase.action = set the Premio_a_Cobrar of {this} to {Premio_a_Cobrar}
+Saida_Python.premio_a_Cobrar#phrase.navigation = {Premio_a_Cobrar} of {this}
+Saida_Python.var#phrase.action = set the Var95_Flex_base of {this} to {Var95_Flex_base}
+Saida_Python.var#phrase.navigation = {Var95_Flex_base} of {this}
+Saida_Python.var95_Flex_Simulado#phrase.action = set the Var95_Flex_Simulado of {this} to {Var95_Flex_Simulado}
+Saida_Python.var95_Flex_Simulado#phrase.navigation = {Var95_Flex_Simulado} of {this}

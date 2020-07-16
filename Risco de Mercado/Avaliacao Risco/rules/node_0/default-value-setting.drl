@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>default-value-setting</name>
+  <uuid>fedc2a65-07cc-4819-a502-09257ffbd417</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set 'Dados de Entrada' to a new Input_Python where 
+    the flex_base is 0.1 , 
+    the flex_simul is 0.15 , 
+    the Anos_de_Estudo is 60 , 
+    the Num_simulacoes is 2000;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

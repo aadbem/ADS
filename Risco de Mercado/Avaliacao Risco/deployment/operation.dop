@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Avaliacao Risco">
+  <name>avaliacaoRisco</name>
+  <uuid>bf1161a6-1a3c-4a0d-b7b4-8baa7b5b05a4</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#e3132c33-68fb-454c-8f77-c92f1cfeb0c3"/>
+  <targetRuleProject href="../../Avaliacao%20Risco#be843d6f-251c-42b0-92e1-34e0b23a6145"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

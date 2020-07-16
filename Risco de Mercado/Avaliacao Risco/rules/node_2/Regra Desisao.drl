@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Regra Desisao</name>
+  <uuid>dbc9c7ce-e43a-4c90-82e2-9c8997a33c45</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the Anos_de_Estudo of 'Dados de Entrada' is 99
+then
+    set decision to "Um Seculo" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
