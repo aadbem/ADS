@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Avaliacao</name>
+  <uuid>f7c0e472-60d9-458d-a16b-ca68d6eee72c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if  the Anos_de_Estudo of 'Dados de Entrada' equals 0 
+    
+then
+    set decision to "Resultado Calculo" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

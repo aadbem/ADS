@@ -1,0 +1,9 @@
+{
+  "name" : "WML-PF-1",
+  "type" : "WML",
+  "description" : "",
+  "mlUrl" : "https://us-south.ml.cloud.ibm.com",
+  "authUrl" : "https://iam-id-1.ng.bluemix.net/identity/token",
+  "instanceId" : "31d440d0-c2f1-4fe9-bfb1-747cb66b3bd4",
+  "apiKey" : null
+}

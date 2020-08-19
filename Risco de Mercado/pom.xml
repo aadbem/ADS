@@ -10,6 +10,7 @@
     <modules>
         <module>Avaliacao Risco</module>
         <module>Entrada Dados Python</module>
+        <module>Teste Chamada Externa</module>
         <module>.decisionservice</module>
     </modules>
 

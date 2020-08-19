@@ -22,6 +22,11 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>decisions.market_risk.risco_de_mercado</groupId>
+            <artifactId>testeChamadaExterna</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
             <version>2.3.3</version>
@@ -60,6 +65,15 @@
                                 <artifactItem>
                                     <groupId>decisions.market_risk.risco_de_mercado</groupId>
                                     <artifactId>entradaDadosPython</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>decisions.market_risk.risco_de_mercado</groupId>
+                                    <artifactId>testeChamadaExterna</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

@@ -1,0 +1,37 @@
+{
+  "id" : "default_schema_id",
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "client_age",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "client_countrycode",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "client_zipcode",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "client_income",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "client_retire",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "client_gender",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "proposed_product_id",
+    "type" : "integer",
+    "nullable" : true
+  }, {
+    "name" : "product_family",
+    "type" : "integer",
+    "nullable" : true
+  } ]
+}

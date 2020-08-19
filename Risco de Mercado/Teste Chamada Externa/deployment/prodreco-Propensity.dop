@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="prodreco-Propensity" targetRuleProjectName="Teste Chamada Externa">
+  <name>testeChamadaExterna</name>
+  <uuid>cdbf9136-fed1-4740-93e8-0dcad7e98d28</uuid>
+  <decisionModel href="../rules/prodreco-Propensity.dmo#dc1d8a9d-89ef-47b9-ba38-6d1295c45253"/>
+  <targetRuleProject href="../../Teste%20Chamada%20Externa#fec04b91-373f-47b0-91e5-4917a9cb68f0"/>
+  <tags key="ProviderType">
+    <value><![CDATA[WML]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

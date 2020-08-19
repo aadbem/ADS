@@ -16,33 +16,41 @@
         </extensionElements>
         <variable id="node_0_ii" name="Dados de Entrada" typeRef="Input_Python"/>
     </inputData>
-    <decision id="node_1" name="Decision Python">
+    <decision id="node_3" name="Resultado">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="Input_Python" collection="false" name="Dados de Entrada"/>
-                <output bomType="Saida_Python" collection="false" name="Decision Python"/>
-                <rule defaultRule="false" href="node_1/Regra%20Alocacao.drl" kind="BusinessRule" name="Regra Alocacao"/>
-                <rule defaultRule="true" href="node_1/Valor%20Default.drl" kind="BusinessRule" name="Valor Default"/>
+                <output bomType="java.lang.String" collection="false" name="Resultado"/>
+                <rule defaultRule="false" href="node_3/Avaliacao.drl" kind="BusinessRule" name="Avaliacao"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Decision Python" typeRef="Saida_Python"/>
+        <variable id="node_3_ii" name="Resultado" typeRef="java.lang.String"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_4"/>
+        </knowledgeRequirement>
     </decision>
-    <decision id="node_2" name="Decision String">
-        <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="Input_Python" collection="false" name="Dados de Entrada"/>
-                <output bomType="java.lang.String" collection="false" name="Decision String"/>
-                <rule defaultRule="false" href="node_2/Regra%20Desisao.drl" kind="BusinessRule" name="Regra Desisao"/>
-                <rule defaultRule="true" href="node_2/regra_default.drl" kind="BusinessRule" name="regra_default"/>
-            </ruleset>
-        </extensionElements>
-        <variable id="node_2_ii" name="Decision String" typeRef="java.lang.String"/>
-        <informationRequirement>
-            <requiredInput href="#node_0"/>
-        </informationRequirement>
-    </decision>
+    <businessKnowledgeModel id="node_4" name="Teste Chamada Externa">
+        <variable name="Teste Chamada Externa" typeRef="java.lang.String"/>
+        <encapsulatedLogic typeRef="java.lang.String">
+            <formalParameter name="inputType" typeRef="java.lang.String"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.TesteChamadaExterna"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(java.lang.String)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

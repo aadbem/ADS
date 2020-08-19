@@ -1,0 +1,41 @@
+
+# decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input#concept.label = ML model input
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.Input(java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long)#phrase.navigation = a new {ML model input} where {0, client age} {1, client countrycode} {2, client gender} {3, client income} {4, client retire} {5, client zipcode} {6, product family} {7, proposed product id} 
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientAge#phrase.action = set the client age of {this} to {client age}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientAge#phrase.navigation = {client age} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientCountrycode#phrase.action = set the client countrycode of {this} to {client countrycode}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientCountrycode#phrase.navigation = {client countrycode} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientGender#phrase.action = set the client gender of {this} to {client gender}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientGender#phrase.navigation = {client gender} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientIncome#phrase.action = set the client income of {this} to {client income}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientIncome#phrase.navigation = {client income} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientRetire#phrase.action = set the client retire of {this} to {client retire}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientRetire#phrase.navigation = {client retire} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientZipcode#phrase.action = set the client zipcode of {this} to {client zipcode}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.clientZipcode#phrase.navigation = {client zipcode} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.productFamily#phrase.action = set the product family of {this} to {product family}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.productFamily#phrase.navigation = {product family} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.proposedProductId#phrase.action = set the proposed product id of {this} to {proposed product id}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input.proposedProductId#phrase.navigation = {proposed product id} of {this}
+
+# decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output#concept.label = ML model output
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.Output(java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double)#phrase.navigation = a new {ML model output} where {0, ano} {1, error code} {2, error message} {3, in error} {4, premio cobrar} {5, probability} {6, valor flex base} {7, valor flex simulado} 
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.ano#phrase.action = set the ano of {this} to {ano}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.ano#phrase.navigation = {ano} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.errorCode#phrase.action = set the error code of {this} to {error code}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.errorCode#phrase.navigation = {error code} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.errorMessage#phrase.action = set the error message of {this} to {error message}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.errorMessage#phrase.navigation = {error message} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.inError#phrase.action = make it {in error} that {this} is in error
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.inError#phrase.navigation = {this} is in error
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.premioCobrar#phrase.action = set the premio cobrar of {this} to {premio cobrar}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.premioCobrar#phrase.navigation = {premio cobrar} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.probability#phrase.action = set the probability of {this} to {probability}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.probability#phrase.navigation = {probability} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.run(decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Input)#phrase.navigation = predict({0})
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.valorFlexBase#phrase.action = set the valor flex base of {this} to {valor flex base}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.valorFlexBase#phrase.navigation = {valor flex base} of {this}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.valorFlexSimulado#phrase.action = set the valor flex simulado of {this} to {valor flex simulado}
+decisions.market_risk.risco_de_mercado.prodreco$002dPropensity.Output.valorFlexSimulado#phrase.navigation = {valor flex simulado} of {this}

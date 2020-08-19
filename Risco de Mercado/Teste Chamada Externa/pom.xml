@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>decisions.market_risk.risco_de_mercado</groupId>
-    <artifactId>avaliacaoRisco</artifactId>
+    <artifactId>testeChamadaExterna</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>decision-library</packaging>
 
@@ -21,10 +21,10 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>avaliacaoRisco</name>
+                            <name>testeChamadaExterna</name>
                         </deployment>
                     </deployments>
-                <packageName>decisions.market_risk.risco_de_mercado.avaliacaorisco</packageName>
+                <packageName>decisions.market_risk.risco_de_mercado.prodreco$002dPropensity</packageName>
                 </configuration>
             <dependencies>
                     <dependency>
@@ -41,12 +41,6 @@
         <dependency>
             <groupId>decisions.market_risk.risco_de_mercado</groupId>
             <artifactId>entradaDadosPython</artifactId>
-            <type>decision-library</type>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>decisions.market_risk.risco_de_mercado</groupId>
-            <artifactId>testeChamadaExterna</artifactId>
             <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>

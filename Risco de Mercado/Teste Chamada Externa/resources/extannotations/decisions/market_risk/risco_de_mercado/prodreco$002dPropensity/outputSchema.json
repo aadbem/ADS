@@ -1,0 +1,19 @@
+{
+  "fields" : [ {
+    "name" : "Valor Flex Base",
+    "type" : "double",
+    "nullable" : true
+  }, {
+    "name" : "Valor Flex Simulado",
+    "type" : "double",
+    "nullable" : true
+  }, {
+    "name" : "Premio Cobrar",
+    "type" : "double",
+    "nullable" : true
+  }, {
+    "name" : "Ano",
+    "type" : "string",
+    "nullable" : true
+  } ]
+}

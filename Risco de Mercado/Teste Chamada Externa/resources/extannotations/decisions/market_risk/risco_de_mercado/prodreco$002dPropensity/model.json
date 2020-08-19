@@ -1,0 +1,115 @@
+{
+  "metadata" : {
+    "guid" : "443d7a6d-9167-49cd-8583-8a0e55d137a9",
+    "id" : "443d7a6d-9167-49cd-8583-8a0e55d137a9",
+    "rev" : "4225e2e3-44d6-4ac0-b47f-fa7582550fe0",
+    "modified_at" : "2018-11-11T18:08:42.446Z",
+    "created_at" : "2018-11-11T18:08:42.364Z",
+    "href" : "/v4/models/443d7a6d-9167-49cd-8583-8a0e55d137a9?rev=4225e2e3-44d6-4ac0-b47f-fa7582550fe0",
+    "name" : "prodreco-propensity"
+  },
+  "entity" : {
+    "name" : "prodreco-propensity",
+    "size" : { },
+    "tags" : [ {
+      "value" : "dsx-project.2a6ef363-8cf7-48b8-b9fa-ca48e89116e7",
+      "description" : "guid of associated DSX project"
+    } ],
+    "training_data_references" : [ {
+      "type" : "bluemixcloudobjectstorage",
+      "connection" : {
+        "resource_instance_id" : "crn:v1:bluemix:public:cloud-object-storage:global:a/d86af7367f70fba4f306d3c19c416625:7f8e1e53-1908-441c-a433-a712d9e260c0:resource-key:dbbdf82d-e326-4589-8168-1beef2ec4118",
+        "url" : "https://s3-api.us-geo.objectstorage.softlayer.net",
+        "iam_url" : "https://iam.ng.bluemix.net/oidc/token",
+        "api_key" : "-W-4ETyFKC1XvUwDyneJoUKDIRPZNVdus-HEW-hl4DEZ"
+      },
+      "location" : {
+        "firstlineheader" : "true",
+        "file_name" : "prodreco-num-training-1.3.csv",
+        "infer_schema" : "1",
+        "file_format" : "csv",
+        "bucket" : "project1-donotdelete-pr-64lgaktqxedlps",
+        "type" : "bluemixcloudobjectstorage"
+      }
+    } ],
+    "label_column" : "product_acceptance",
+    "content_status" : {
+      "state" : "persisted"
+    },
+    "space" : {
+      "href" : "/v4/spaces/dfed33f2-4aa9-4ea5-8763-4bca93547c33",
+      "id" : "dfed33f2-4aa9-4ea5-8763-4bca93547c33"
+    },
+    "training_lib" : {
+      "href" : "/v4/libraries/9722cf60-ad96-4c85-811f-6d6f7a32d732",
+      "id" : "9722cf60-ad96-4c85-811f-6d6f7a32d732"
+    },
+    "transformed_label_column" : "product_acceptance",
+    "metrics" : [ {
+      "timestamp" : "2018-11-11T18:08:54.553Z",
+      "ml_metrics" : {
+        "rootMeanSquaredError" : 0.5773502691896257,
+        "meanSquaredError" : 0.3333333333333333,
+        "r2" : -0.5,
+        "explainedVariance" : 0.3333333333333333,
+        "meanAbsoluteError" : 0.3333333333333333
+      },
+      "context" : {
+        "phase" : "setup"
+      }
+    } ],
+    "type" : "wml_1.0",
+    "runtime" : {
+      "href" : "/v4/runtimes/spark-mllib_2.3",
+      "id" : "spark-mllib_2.3"
+    },
+    "schemas" : {
+      "input" : [ {
+        "id" : "default_schema_id",
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "client_age",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "client_countrycode",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "client_zipcode",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "client_income",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "client_retire",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "client_gender",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "proposed_product_id",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "product_family",
+          "type" : "integer",
+          "nullable" : true
+        } ]
+      } ],
+      "output" : [ ]
+    },
+    "model_definition" : {
+      "id" : "9722cf60-ad96-4c85-811f-6d6f7a32d732",
+      "href" : "/v4/libraries/9722cf60-ad96-4c85-811f-6d6f7a32d732"
+    }
+  },
+  "id" : "443d7a6d-9167-49cd-8583-8a0e55d137a9",
+  "name" : "prodreco-propensity",
+  "trainedAt" : "2018-11-11T18:08:42.364Z",
+  "modifiedAt" : "2018-11-11T18:08:42.446Z"
+}
