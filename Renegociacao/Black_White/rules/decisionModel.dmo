@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>51e375b7-a365-4459-94bd-0f94167ae899</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Entrada">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="BW_List" collection="false" name="Entrada"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Entrada" typeRef="BW_List"/>
+    </inputData>
+    <decision id="node_1" name="Regra">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="BW_List" collection="false" name="Entrada"/>
+                <output bomType="Resultado_BlackWhite" collection="false" name="Regra"/>
+                <rule defaultRule="false" href="node_1/Regra_BlackWhite_FinalizarFluxo.drl" kind="BusinessRule" name="Regra_BlackWhite_FinalizarFluxo"/>
+                <rule defaultRule="false" href="node_1/BlackWhite_ProximaPolitica.drl" kind="BusinessRule" name="BlackWhite_ProximaPolitica"/>
+                <rule defaultRule="true" href="node_1/Validacao%20Default%20.drl" kind="BusinessRule" name="Validacao Default "/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Regra" typeRef="Resultado_BlackWhite"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

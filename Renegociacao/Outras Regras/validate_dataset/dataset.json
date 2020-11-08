@@ -1,0 +1,8 @@
+{
+  "input": {
+    "cdTipoCobranca": "1",
+    "modalidade_Descricao": "CONSIGNADO INSS",
+    "vlrRetencao": 10,
+    "tpPessoa": "J"
+  }
+}

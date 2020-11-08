@@ -1,0 +1,11 @@
+{
+  "entrada_Reneg": {
+    "dtCancelamentoReneg": "",
+    "simuladorStatus": "1",
+    "Valor": 100
+  },
+  "entrada_Score": {
+    "codigoModelo": 79,
+    "valorScore": 705
+  }
+}

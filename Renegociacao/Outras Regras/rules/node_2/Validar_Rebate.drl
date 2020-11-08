@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Validar_Rebate</name>
+  <uuid>6a96d9e5-a22d-41e2-b95b-5299e853196c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the vlrRetencao of Input is more than 0 
+then
+    add a new Resultado_OutrasRegras where
+        the Retorno is "Retorno Falso Valor Retencao" to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

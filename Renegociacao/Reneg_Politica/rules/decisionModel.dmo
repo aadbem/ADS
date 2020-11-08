@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>33ca42dc-90ec-497b-9a3f-5a93de4bc20d</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Entrada_Reneg">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Reneg" collection="false" name="Entrada_Reneg"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Entrada_Reneg" typeRef="Reneg"/>
+    </inputData>
+    <decision id="node_1" name="Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Reneg" collection="false" name="Entrada_Reneg"/>
+                <input bomType="Score" collection="false" name="Entrada_Score"/>
+                <output bomType="Resultado_Reneg" collection="true" name="Decision"/>
+                <rule defaultRule="false" href="node_1/Tem_Reneg_Andamento.drl" kind="BusinessRule" name="Tem_Reneg_Andamento"/>
+                <rule defaultRule="false" href="node_1/Tem_Reneg_Cancelada.drl" kind="BusinessRule" name="Tem_Reneg_Cancelada"/>
+                <rule defaultRule="false" href="node_1/Tem_Rolagem.drl" kind="BusinessRule" name="Tem_Rolagem"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Decision" typeRef="Resultado_Reneg[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Entrada_Score">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Score" collection="false" name="Entrada_Score"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Entrada_Score" typeRef="Score"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

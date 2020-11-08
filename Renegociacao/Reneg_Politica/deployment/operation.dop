@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Reneg_Politica">
+  <name>reneg_Politica</name>
+  <uuid>32cf9152-f4aa-4174-b0f6-ed52160c6825</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#33ca42dc-90ec-497b-9a3f-5a93de4bc20d"/>
+  <targetRuleProject href="../../Reneg_Politica#340a1050-f638-4757-866f-954d78b9f325"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

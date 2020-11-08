@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>b8b21370-3dee-4195-b7c1-7a362688f2f5</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <decision id="node_1" name="Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <output bomType="java.lang.String" collection="true" name="Decision"/>
+                <rule defaultRule="false" href="node_1/Avaliacao_Geral.drl" kind="BusinessRule" name="Avaliacao_Geral"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Decision" typeRef="java.lang.String[]"/>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_2"/>
+        </knowledgeRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_3"/>
+        </knowledgeRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_4"/>
+        </knowledgeRequirement>
+    </decision>
+    <businessKnowledgeModel id="node_2" name="Black_White">
+        <variable name="Black_White" typeRef="Resultado_BlackWhite"/>
+        <encapsulatedLogic typeRef="Resultado_BlackWhite">
+            <formalParameter name="entrada" typeRef="BW_List"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.market_risk.renegociacao.black_white.Black_White"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(BW_List)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+    <businessKnowledgeModel id="node_3" name="Reneg_Politica">
+        <variable name="Reneg_Politica" typeRef="Resultado_Reneg[]"/>
+        <encapsulatedLogic typeRef="Resultado_Reneg[]">
+            <formalParameter name="entrada_Reneg" typeRef="Reneg"/>
+            <formalParameter name="entrada_Score" typeRef="Score"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.market_risk.renegociacao.reneg_politica.Reneg_Politica"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(Reneg,Score)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+    <businessKnowledgeModel id="node_4" name="Outras Regras">
+        <variable name="Outras Regras" typeRef="decisions.market_risk.renegociacao.outrasregras.OutrasRegrasOutput"/>
+        <encapsulatedLogic typeRef="decisions.market_risk.renegociacao.outrasregras.OutrasRegrasOutput">
+            <formalParameter name="input" typeRef="Contrato"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.market_risk.renegociacao.outrasregras.OutrasRegras"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(Contrato)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

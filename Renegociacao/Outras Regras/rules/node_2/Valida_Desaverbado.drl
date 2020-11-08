@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Valida_Desaverbado</name>
+  <uuid>0977bc50-2959-4d5b-a85c-aaef50d16d0f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the modalidade_Descricao of Input is one of { 
+        "CONSIGNADO INSS", 
+        "CONSIGNADO PREFEITURA DE SAO PAULO", 
+        "CONSIGNADO PRIVADO",
+        "CONSIGNADO PUBLICO",
+        "CONSIGNADO PUBLICO - EXERCITO",
+        "CONSIGNADO VIA BANCO - DIVERSOS"}
+    and the cdTipoCobranca of Input is "1"
+then
+    add a new Resultado_OutrasRegras where
+        the Retorno is "Retorno False - Modalidade e Tipo de Cobranca" to decision ;
+
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

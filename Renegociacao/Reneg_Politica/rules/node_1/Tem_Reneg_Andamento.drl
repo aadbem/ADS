@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Tem_Reneg_Andamento</name>
+  <uuid>4ac6562b-8bc6-4490-8f1c-8b911416a7b0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the simuladorStatus of Entrada_Reneg is one of { "1", "2"} 
+and the dtCancelamentoReneg of Entrada_Reneg is "" 
+then
+add a new Resultado_Reneg where
+        the Retorno is "Entrada 1 ou 2 e Cancelamento vazio" to decision;
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

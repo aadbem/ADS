@@ -1,0 +1,72 @@
+
+# BW_List
+BW_List#concept.label = BW_List
+BW_List.BW_List(java.lang.String,java.lang.String)#phrase.navigation = a new {BW_List} where {0, acaoLiberacao} {1, flAtivo}
+BW_List.acaoLiberacao#phrase.action = set the acaoLiberacao of {this} to {acaoLiberacao}
+BW_List.acaoLiberacao#phrase.navigation = {acaoLiberacao} of {this}
+BW_List.flAtivo#phrase.action = set the flAtivo of {this} to {flAtivo}
+BW_List.flAtivo#phrase.navigation = {flAtivo} of {this}
+
+# Contrato
+Contrato#concept.label = Contrato
+Contrato.Contrato(java.lang.String,java.lang.String,java.lang.String,double,java.lang.Long,java.lang.String,java.lang.String,java.lang.Long,java.lang.String,java.lang.String,double)#phrase.navigation = a new {Contrato} where {0, cdTipoCobranca} {1, dtPrimeiroVencimentoAberto} {2, modalidade_Descricao} {3, vlrRetencao} {4, participantes_cdPapel} {5, participantes_dtFimRelacionamento} {6, produto_Descricao} {7, qtdDiasAtraso} {8, subProduto} {9, tpPessoa} {10, Valor}
+Contrato.cdTipoCobranca#phrase.action = set the cdTipoCobranca of {this} to {cdTipoCobranca}
+Contrato.cdTipoCobranca#phrase.navigation = {cdTipoCobranca} of {this}
+Contrato.dtPrimeiroVencimentoAberto#phrase.action = set the dtPrimeiroVencimentoAberto of {this} to {dtPrimeiroVencimentoAberto}
+Contrato.dtPrimeiroVencimentoAberto#phrase.navigation = {dtPrimeiroVencimentoAberto} of {this}
+Contrato.modalidade_Descricao#phrase.action = set the modalidade_Descricao of {this} to {modalidade_Descricao}
+Contrato.modalidade_Descricao#phrase.navigation = {modalidade_Descricao} of {this}
+Contrato.newAttribute#phrase.action = set the vlrRetencao of {this} to {vlrRetencao}
+Contrato.newAttribute#phrase.navigation = {vlrRetencao} of {this}
+Contrato.participantes_cdPapel#phrase.action = set the participantes_cdPapel of {this} to {participantes_cdPapel}
+Contrato.participantes_cdPapel#phrase.navigation = {participantes_cdPapel} of {this}
+Contrato.participantes_dtFimRelacionamento#phrase.action = set the participantes_dtFimRelacionamento of {this} to {participantes_dtFimRelacionamento}
+Contrato.participantes_dtFimRelacionamento#phrase.navigation = {participantes_dtFimRelacionamento} of {this}
+Contrato.produto_Descricao#phrase.action = set the produto_Descricao of {this} to {produto_Descricao}
+Contrato.produto_Descricao#phrase.navigation = {produto_Descricao} of {this}
+Contrato.qtdDiasAtraso#phrase.action = set the qtdDiasAtraso of {this} to {qtdDiasAtraso}
+Contrato.qtdDiasAtraso#phrase.navigation = {qtdDiasAtraso} of {this}
+Contrato.subProduto#phrase.action = set the subProduto of {this} to {subProduto}
+Contrato.subProduto#phrase.navigation = {subProduto} of {this}
+Contrato.tpPessoa#phrase.action = set the tpPessoa of {this} to {tpPessoa}
+Contrato.tpPessoa#phrase.navigation = {tpPessoa} of {this}
+Contrato.valor#phrase.action = set the Valor of {this} to {Valor}
+Contrato.valor#phrase.navigation = {Valor} of {this}
+
+# Reneg
+Reneg#concept.label = Reneg
+Reneg.Reneg(java.lang.String,java.lang.String,double)#phrase.navigation = a new {Reneg} where {0, dtCancelamentoReneg} {1, simuladorStatus} {2, Valor}
+Reneg.dtCancelamentoReneg#phrase.action = set the dtCancelamentoReneg of {this} to {dtCancelamentoReneg}
+Reneg.dtCancelamentoReneg#phrase.navigation = {dtCancelamentoReneg} of {this}
+Reneg.simuladorStatus#phrase.action = set the simuladorStatus of {this} to {simuladorStatus}
+Reneg.simuladorStatus#phrase.navigation = {simuladorStatus} of {this}
+Reneg.valor#phrase.action = set the Valor of {this} to {Valor}
+Reneg.valor#phrase.navigation = {Valor} of {this}
+
+# Resultado_BlackWhite
+Resultado_BlackWhite#concept.label = Resultado_BlackWhite
+Resultado_BlackWhite.Resultado_BlackWhite(java.lang.String)#phrase.navigation = a new {Resultado_BlackWhite} where {0, Retorno}
+Resultado_BlackWhite.retorno#phrase.action = set the Retorno of {this} to {Retorno}
+Resultado_BlackWhite.retorno#phrase.navigation = {Retorno} of {this}
+
+# Resultado_OutrasRegras
+Resultado_OutrasRegras#concept.label = Resultado_OutrasRegras
+Resultado_OutrasRegras.Resultado_OutrasRegras(java.lang.String)#phrase.navigation = a new {Resultado_OutrasRegras} where {0, Retorno}
+Resultado_OutrasRegras.retorno#phrase.action = set the Retorno of {this} to {Retorno}
+Resultado_OutrasRegras.retorno#phrase.navigation = {Retorno} of {this}
+
+# Resultado_Reneg
+Resultado_Reneg#concept.label = Resultado_Reneg
+Resultado_Reneg.Resultado_Reneg(java.lang.String)#phrase.navigation = a new {Resultado_Reneg} where {0, Retorno}
+Resultado_Reneg.retorno#phrase.action = set the Retorno of {this} to {Retorno}
+Resultado_Reneg.retorno#phrase.navigation = {Retorno} of {this}
+
+# Score
+Score#concept.label = Score
+Score.Score(java.lang.Long,double,java.lang.Long)#phrase.navigation = a new {Score} where {0, codigoModelo} {1, Valor} {2, valorScore}
+Score.codigoModelo#phrase.action = set the codigoModelo of {this} to {codigoModelo}
+Score.codigoModelo#phrase.navigation = {codigoModelo} of {this}
+Score.valor#phrase.action = set the Valor of {this} to {Valor}
+Score.valor#phrase.navigation = {Valor} of {this}
+Score.valorScore#phrase.action = set the valorScore of {this} to {valorScore}
+Score.valorScore#phrase.navigation = {valorScore} of {this}

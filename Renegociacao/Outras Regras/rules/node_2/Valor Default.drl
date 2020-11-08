@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Valor Default</name>
+  <uuid>982ab134-5863-4118-a016-cbcd02865ec9</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[add a new Resultado_OutrasRegras where
+        the Retorno is "Não passou em nenhum regra" to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

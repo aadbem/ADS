@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Tem_Rolagem</name>
+  <uuid>c9c4303a-d5a4-4f34-87ec-cc05ff9d3b4d</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the codigoModelo of Entrada_Score is 79
+    and the valorScore of Entrada_Score is 705
+then
+add a new Resultado_Reneg where
+        the Retorno is "Regras Rolagem Modelo 79 e Valor 705" to decision;
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

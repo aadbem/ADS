@@ -1,0 +1,191 @@
+
+
+public class BW_List
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "BW_List"
+        property "de.generated" "true"
+{
+    public string acaoLiberacao
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "acaoLiberacao"
+                property update "true";
+    public string flAtivo
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "flAtivo"
+                property update "true";
+    public BW_List(string acaoLiberacao, string flAtivo)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public BW_List()
+                property "dataio.default" "true";
+}
+
+public class Contrato
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Contrato"
+        property "de.generated" "true"
+{
+    public string cdTipoCobranca
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "cdTipoCobranca"
+                property update "true";
+    public string dtPrimeiroVencimentoAberto
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "dtPrimeiroVencimentoAberto"
+                property update "true";
+    public string modalidade_Descricao
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "modalidade_Descricao"
+                property update "true";
+    public double newAttribute
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vlrRetencao"
+                property update "true";
+    public java.lang.Long participantes_cdPapel
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "participantes_cdPapel"
+                property update "true";
+    public string participantes_dtFimRelacionamento
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "participantes_dtFimRelacionamento"
+                property update "true";
+    public string produto_Descricao
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "produto_Descricao"
+                property update "true";
+    public java.lang.Long qtdDiasAtraso
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "qtdDiasAtraso"
+                property update "true";
+    public string subProduto
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "subProduto"
+                property update "true";
+    public string tpPessoa
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "tpPessoa"
+                property update "true";
+    public double valor
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Valor"
+                property update "true";
+    public Contrato(string cdTipoCobranca, 
+        string dtPrimeiroVencimentoAberto, 
+        string modalidade_Descricao, 
+        double newAttribute, 
+        java.lang.Long participantes_cdPapel, 
+        string participantes_dtFimRelacionamento, 
+        string produto_Descricao, 
+        java.lang.Long qtdDiasAtraso, 
+        string subProduto, 
+        string tpPessoa, 
+        double valor)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Contrato()
+                property "dataio.default" "true";
+}
+
+public class Reneg
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Reneg"
+        property "de.generated" "true"
+{
+    public string dtCancelamentoReneg
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "dtCancelamentoReneg"
+                property update "true";
+    public string simuladorStatus
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "simuladorStatus"
+                property update "true";
+    public double valor
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Valor"
+                property update "true";
+    public Reneg(string dtCancelamentoReneg, string simuladorStatus, double valor)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Reneg()
+                property "dataio.default" "true";
+}
+
+public class Resultado_BlackWhite
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Resultado_BlackWhite"
+        property "de.generated" "true"
+{
+    public string retorno
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Retorno"
+                property update "true";
+    public Resultado_BlackWhite(string retorno)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Resultado_BlackWhite()
+                property "dataio.default" "true";
+}
+
+public class Resultado_OutrasRegras
+        property "ads.typeId" "7"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Resultado_OutrasRegras"
+        property "de.generated" "true"
+{
+    public string retorno
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Retorno"
+                property update "true";
+    public Resultado_OutrasRegras(string retorno)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Resultado_OutrasRegras()
+                property "dataio.default" "true";
+}
+
+public class Resultado_Reneg
+        property "ads.typeId" "6"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Resultado_Reneg"
+        property "de.generated" "true"
+{
+    public string retorno
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Retorno"
+                property update "true";
+    public Resultado_Reneg(string retorno)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Resultado_Reneg()
+                property "dataio.default" "true";
+}
+
+public class Score
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Score"
+        property "de.generated" "true"
+{
+    public java.lang.Long codigoModelo
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "codigoModelo"
+                property update "true";
+    public double valor
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Valor"
+                property update "true";
+    public java.lang.Long valorScore
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "valorScore"
+                property update "true";
+    public Score(java.lang.Long codigoModelo, double valor, java.lang.Long valorScore)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Score()
+                property "dataio.default" "true";
+}
+
