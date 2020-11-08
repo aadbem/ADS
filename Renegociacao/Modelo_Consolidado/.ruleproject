@@ -11,7 +11,6 @@
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.market_risk.renegociacao:reneg_Model#LATEST-SNAPSHOT" packageId="decisions.market_risk.renegociacao:reneg_Model" version="LATEST-SNAPSHOT"/>
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.market_risk.renegociacao:black_White#LATEST-SNAPSHOT" packageId="decisions.market_risk.renegociacao:black_White" version="LATEST-SNAPSHOT"/>
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.market_risk.renegociacao:reneg_Politica#LATEST-SNAPSHOT" packageId="decisions.market_risk.renegociacao:reneg_Politica" version="LATEST-SNAPSHOT"/>
-    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.market_risk.renegociacao:outrasRegras#LATEST-SNAPSHOT" packageId="decisions.market_risk.renegociacao:outrasRegras" version="LATEST-SNAPSHOT"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>

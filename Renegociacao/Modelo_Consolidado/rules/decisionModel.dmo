@@ -10,22 +10,44 @@
     <decision id="node_1" name="Decision">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="Avaliacao_BlackWhite"/>
                 <output bomType="java.lang.String" collection="true" name="Decision"/>
                 <rule defaultRule="false" href="node_1/Avaliacao_Geral.drl" kind="BusinessRule" name="Avaliacao_Geral"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Decision" typeRef="java.lang.String[]"/>
-        <knowledgeRequirement>
-            <requiredKnowledge href="#node_2"/>
-        </knowledgeRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
         <knowledgeRequirement>
             <requiredKnowledge href="#node_3"/>
         </knowledgeRequirement>
+    </decision>
+    <decision id="node_5" name="Avaliacao_BlackWhite">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="ValorTeste"/>
+                <output bomType="java.lang.String" collection="false" name="Avaliacao_BlackWhite"/>
+                <rule defaultRule="false" href="node_5/Regra_Avaliacao_BlackWhite.drl" kind="BusinessRule" name="Regra_Avaliacao_BlackWhite"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="Avaliacao_BlackWhite" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
         <knowledgeRequirement>
-            <requiredKnowledge href="#node_4"/>
+            <requiredKnowledge href="#node_2"/>
         </knowledgeRequirement>
     </decision>
+    <inputData id="node_6" name="ValorTeste">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="ValorTeste"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_6_ii" name="ValorTeste" typeRef="java.lang.String"/>
+    </inputData>
     <businessKnowledgeModel id="node_2" name="Black_White">
         <variable name="Black_White" typeRef="Resultado_BlackWhite"/>
         <encapsulatedLogic typeRef="Resultado_BlackWhite">
@@ -62,26 +84,6 @@
                     <variable name="method signature"/>
                     <literalExpression>
                         <text>"run(Reneg,Score)"</text>
-                    </literalExpression>
-                </contextEntry>
-            </context>
-        </encapsulatedLogic>
-    </businessKnowledgeModel>
-    <businessKnowledgeModel id="node_4" name="Outras Regras">
-        <variable name="Outras Regras" typeRef="decisions.market_risk.renegociacao.outrasregras.OutrasRegrasOutput"/>
-        <encapsulatedLogic typeRef="decisions.market_risk.renegociacao.outrasregras.OutrasRegrasOutput">
-            <formalParameter name="input" typeRef="Contrato"/>
-            <context>
-                <contextEntry>
-                    <variable name="class"/>
-                    <literalExpression>
-                        <text>"decisions.market_risk.renegociacao.outrasregras.OutrasRegras"</text>
-                    </literalExpression>
-                </contextEntry>
-                <contextEntry>
-                    <variable name="method signature"/>
-                    <literalExpression>
-                        <text>"run(Contrato)"</text>
                     </literalExpression>
                 </contextEntry>
             </context>

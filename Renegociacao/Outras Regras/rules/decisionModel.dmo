@@ -15,19 +15,6 @@
         </extensionElements>
         <variable id="node_0_ii" name="Input" typeRef="Contrato"/>
     </inputData>
-    <decision id="node_1" name="Regras PJ">
-        <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="Contrato" collection="false" name="Input"/>
-                <output bomType="Resultado_OutrasRegras" collection="true" name="Regras PJ"/>
-                <rule defaultRule="false" href="node_1/Validar_Pessoa.drl" kind="BusinessRule" name="Validar_Pessoa"/>
-            </ruleset>
-        </extensionElements>
-        <variable id="node_1_ii" name="Regras PJ" typeRef="Resultado_OutrasRegras[]"/>
-        <informationRequirement>
-            <requiredInput href="#node_0"/>
-        </informationRequirement>
-    </decision>
     <decision id="node_2" name="Outras Regras">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
@@ -37,6 +24,7 @@
                 <rule defaultRule="false" href="node_2/Valida_Desaverbado.drl" kind="BusinessRule" name="Valida_Desaverbado"/>
                 <rule defaultRule="false" href="node_2/Valida_Desaverbado_Tabela.dmt" kind="DecisionTable" name="Valida_Desaverbado_Tabela"/>
                 <rule defaultRule="true" href="node_2/Valor%20Default.drl" kind="BusinessRule" name="Valor Default"/>
+                <rule defaultRule="false" href="node_2/Validar_Pessoa.drl" kind="BusinessRule" name="Validar_Pessoa"/>
             </ruleset>
         </extensionElements>
         <variable id="node_2_ii" name="Outras Regras" typeRef="Resultado_OutrasRegras[]"/>
